@@ -1,181 +1,68 @@
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
+    List<String> titleText = [
+      'Д',
+      'и',
+      'т',
+      'я',
+      'ч',
+      'и',
+      'й',
+      ' ',
+      'м',
+      'а',
+      'й',
+      'д',
+      'а',
+      'н',
+      'ч',
+      'и',
+      'к'
+    ];
+    var colorList = [
+      const Color(0xFFF44336),
+      const Color(0xFF2196F3),
+      const Color(0xFFFFEB3B),
+      const Color(0xFFE83BFF),
+      const Color(0xFF9FEBF3),
+    ];
     return MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(primarySwatch: Colors.blue),
         home: Scaffold(
             appBar: PreferredSize(
-                preferredSize: Size.fromHeight(80.0),
+                preferredSize: const Size.fromHeight(80.0),
                 child: AppBar(
-                    title: const Column(children: [
+                    title: Column(children: [
                       Padding(
-                          padding: EdgeInsets.only(top: 16.0),
+                          padding: const EdgeInsets.only(top: 16.0),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Text(
-                                'Д',
-                                style: TextStyle(
-                                    fontFamily: 'Test',
-                                    color: Colors.red,
-                                    fontSize: 32.0,
-                                    fontWeight: FontWeight.bold,
-                                    overflow: TextOverflow.visible),
-                              ),
-                              Text(
-                                'и',
-                                style: TextStyle(
-                                    fontFamily: 'Test',
-                                    color: Colors.blue,
-                                    fontSize: 32.0,
-                                    fontWeight: FontWeight.bold,
-                                    overflow: TextOverflow.visible),
-                              ),
-                              Text(
-                                'т',
-                                style: TextStyle(
-                                    fontFamily: 'Test',
-                                    color: Colors.yellow,
-                                    fontSize: 32.0,
-                                    fontWeight: FontWeight.bold,
-                                    overflow: TextOverflow.visible),
-                              ),
-                              Text(
-                                'я',
-                                style: TextStyle(
-                                    fontFamily: 'Test',
-                                    color: Color.fromARGB(255, 232, 59, 255),
-                                    fontSize: 32.0,
-                                    fontWeight: FontWeight.bold,
-                                    overflow: TextOverflow.visible),
-                              ),
-                              Text(
-                                'ч',
-                                style: TextStyle(
-                                    fontFamily: 'Test',
-                                    color: Color.fromARGB(255, 255, 59, 59),
-                                    fontSize: 32.0,
-                                    fontWeight: FontWeight.bold,
-                                    overflow: TextOverflow.visible),
-                              ),
-                              Text(
-                                'и',
-                                style: TextStyle(
-                                    fontFamily: 'Test',
-                                    color: Color.fromARGB(255, 159, 235, 243),
-                                    fontSize: 32.0,
-                                    fontWeight: FontWeight.bold,
-                                    overflow: TextOverflow.visible),
-                              ),
-                              Text(
-                                'й',
-                                style: TextStyle(
-                                    fontFamily: 'Test',
-                                    color: Color.fromARGB(255, 255, 213, 45),
-                                    fontSize: 32.0,
-                                    fontWeight: FontWeight.bold,
-                                    overflow: TextOverflow.visible),
-                              ),
-                              Text(
-                                ' ',
-                                style: TextStyle(
-                                    fontFamily: 'Test',
-                                    color: Colors.red,
-                                    fontSize: 32.0,
-                                    fontWeight: FontWeight.bold,
-                                    overflow: TextOverflow.visible),
-                              ),
-                              Text(
-                                'м',
-                                style: TextStyle(
-                                    fontFamily: 'Test',
-                                    color: Colors.blue,
-                                    fontSize: 32.0,
-                                    fontWeight: FontWeight.bold,
-                                    overflow: TextOverflow.visible),
-                              ),
-                              Text(
-                                'а',
-                                style: TextStyle(
-                                    fontFamily: 'Test',
-                                    color: Colors.yellow,
-                                    fontSize: 32.0,
-                                    fontWeight: FontWeight.bold,
-                                    overflow: TextOverflow.visible),
-                              ),
-                              Text(
-                                'й',
-                                style: TextStyle(
-                                    fontFamily: 'Test',
-                                    color: Color.fromARGB(255, 232, 59, 255),
-                                    fontSize: 32.0,
-                                    fontWeight: FontWeight.bold,
-                                    overflow: TextOverflow.visible),
-                              ),
-                              Text(
-                                'д',
-                                style: TextStyle(
-                                    fontFamily: 'Test',
-                                    color: Color.fromARGB(255, 255, 59, 59),
-                                    fontSize: 32.0,
-                                    fontWeight: FontWeight.bold,
-                                    overflow: TextOverflow.visible),
-                              ),
-                              Text(
-                                'а',
-                                style: TextStyle(
-                                    fontFamily: 'Test',
-                                    color: Color.fromARGB(255, 159, 235, 243),
-                                    fontSize: 32.0,
-                                    fontWeight: FontWeight.bold,
-                                    overflow: TextOverflow.visible),
-                              ),
-                              Text(
-                                'н',
-                                style: TextStyle(
-                                    fontFamily: 'Test',
-                                    color: Color.fromARGB(255, 255, 213, 45),
-                                    fontSize: 32.0,
-                                    fontWeight: FontWeight.bold,
-                                    overflow: TextOverflow.visible),
-                              ),
-                              Text(
-                                'ч',
-                                style: TextStyle(
-                                    fontFamily: 'Test',
-                                    color: Color.fromARGB(255, 8, 189, 255),
-                                    fontSize: 32.0,
-                                    fontWeight: FontWeight.bold,
-                                    overflow: TextOverflow.visible),
-                              ),
-                              Text(
-                                'и',
-                                style: TextStyle(
-                                    fontFamily: 'Test',
-                                    color: Color.fromARGB(255, 22, 41, 242),
-                                    fontSize: 32.0,
-                                    fontWeight: FontWeight.bold,
-                                    overflow: TextOverflow.visible),
-                              ),
-                              Text(
-                                'к',
-                                style: TextStyle(
-                                    fontFamily: 'Test',
-                                    color: Color.fromARGB(255, 222, 38, 38),
-                                    fontSize: 32.0,
-                                    fontWeight: FontWeight.bold,
-                                    overflow: TextOverflow.visible),
-                              )
+                              for (var i in titleText)
+                                Text(
+                                  i,
+                                  style: TextStyle(
+                                      fontFamily: 'Test',
+                                      color: colorList[
+                                          Random().nextInt(colorList.length)],
+                                      fontSize: 32.0,
+                                      fontWeight: FontWeight.bold,
+                                      overflow: TextOverflow.visible),
+                                )
                             ],
                           )),
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.only(bottom: 16),
                         child: Text(
                           'онлайн',
@@ -374,7 +261,7 @@ class MyApp extends StatelessWidget {
                             Align(
                                 alignment: Alignment.topLeft,
                                 child: Padding(
-                                  padding: EdgeInsets.all(16.0),
+                                  padding: const EdgeInsets.all(16.0),
                                   child: RichText(
                                       text: const TextSpan(
                                     text:
