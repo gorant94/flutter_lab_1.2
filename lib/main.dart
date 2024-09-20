@@ -177,109 +177,121 @@ class MyApp extends StatelessWidget {
                                     ))
                                   ],
                                 )),
-                            const Align(
-                              alignment: Alignment.topRight,
-                              child: Padding(
-                                  padding: EdgeInsets.all(8.0),
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.end,
-                                    children: [
-                                      Text(
-                                        'Рекомендуємо',
+                            Expanded(
+                                child: SingleChildScrollView(
+                              child: Column(
+                                children: [
+                                  const Align(
+                                    alignment: Alignment.topRight,
+                                    child: Padding(
+                                        padding: EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.end,
+                                          children: [
+                                            Text(
+                                              'Рекомендуємо',
+                                              style: TextStyle(
+                                                  fontSize: 24.0,
+                                                  fontWeight: FontWeight.bold,
+                                                  color: Color.fromARGB(
+                                                      255, 49, 0, 108)),
+                                            ),
+                                            Text(
+                                              'Портал «Сніжинка»',
+                                              textAlign: TextAlign.end,
+                                              style: TextStyle(
+                                                  fontSize: 16.0,
+                                                  color: Color.fromARGB(
+                                                      255, 49, 0, 108)),
+                                            ),
+                                            Text(
+                                              'Дитячий Facebook',
+                                              textAlign: TextAlign.end,
+                                              style: TextStyle(
+                                                  fontSize: 16.0,
+                                                  color: Color.fromARGB(
+                                                      255, 49, 0, 108)),
+                                            ),
+                                            Text('Дитячий сайт знайомств',
+                                                textAlign: TextAlign.end,
+                                                style: TextStyle(
+                                                    fontSize: 16.0,
+                                                    color: Color.fromARGB(
+                                                        255, 49, 0, 108))),
+                                            Text('Портал «Равлик»',
+                                                textAlign: TextAlign.end,
+                                                style: TextStyle(
+                                                    fontSize: 16.0,
+                                                    color: Color.fromARGB(
+                                                        255, 49, 0, 108))),
+                                            Text('Курси гугління для мам',
+                                                textAlign: TextAlign.end,
+                                                style: TextStyle(
+                                                    fontSize: 16.0,
+                                                    color: Color.fromARGB(
+                                                        255, 49, 0, 108))),
+                                          ],
+                                        )),
+                                  ),
+                                  const Align(
+                                    alignment: Alignment.center,
+                                    child: Text(
+                                        'Ми – ваш вихід у випадку карантину!',
+                                        textAlign: TextAlign.center,
                                         style: TextStyle(
                                             fontSize: 24.0,
                                             fontWeight: FontWeight.bold,
                                             color: Color.fromARGB(
-                                                255, 49, 0, 108)),
-                                      ),
-                                      Text(
-                                        'Портал «Сніжинка»',
-                                        textAlign: TextAlign.end,
-                                        style: TextStyle(
-                                            fontSize: 16.0,
-                                            color: Color.fromARGB(
-                                                255, 49, 0, 108)),
-                                      ),
-                                      Text(
-                                        'Дитячий Facebook',
-                                        textAlign: TextAlign.end,
-                                        style: TextStyle(
-                                            fontSize: 16.0,
-                                            color: Color.fromARGB(
-                                                255, 49, 0, 108)),
-                                      ),
-                                      Text('Дитячий сайт знайомств',
-                                          textAlign: TextAlign.end,
-                                          style: TextStyle(
-                                              fontSize: 16.0,
-                                              color: Color.fromARGB(
-                                                  255, 49, 0, 108))),
-                                      Text('Портал «Равлик»',
-                                          textAlign: TextAlign.end,
-                                          style: TextStyle(
-                                              fontSize: 16.0,
-                                              color: Color.fromARGB(
-                                                  255, 49, 0, 108))),
-                                      Text('Курси гугління для мам',
-                                          textAlign: TextAlign.end,
-                                          style: TextStyle(
-                                              fontSize: 16.0,
-                                              color: Color.fromARGB(
-                                                  255, 49, 0, 108))),
-                                    ],
-                                  )),
-                            ),
-                            const Align(
-                              alignment: Alignment.center,
-                              child: Text('Ми – ваш вихід у випадку карантину!',
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                      fontSize: 24.0,
-                                      fontWeight: FontWeight.bold,
-                                      color: Color.fromARGB(255, 49, 0, 108))),
-                            ),
-                            const Align(
-                              alignment: Alignment.topLeft,
-                              child: Padding(
-                                  padding: EdgeInsets.all(16.0),
-                                  child: Text(
-                                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+                                                255, 49, 0, 108))),
+                                  ),
+                                  const Align(
+                                    alignment: Alignment.topLeft,
+                                    child: Padding(
+                                        padding: EdgeInsets.all(16.0),
+                                        child: Text(
+                                            'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+                                            style: TextStyle(
+                                                color: Color.fromARGB(
+                                                    255, 49, 0, 108)))),
+                                  ),
+                                  const Align(
+                                    alignment: Alignment.center,
+                                    child: Text(
+                                      'Наші переваги: ',
                                       style: TextStyle(
-                                          color: Color.fromARGB(
-                                              255, 49, 0, 108)))),
-                            ),
-                            const Align(
-                              alignment: Alignment.center,
-                              child: Text(
-                                'Наші переваги: ',
-                                style: TextStyle(
-                                    fontSize: 24.0,
-                                    fontWeight: FontWeight.bold,
-                                    color: Color.fromARGB(255, 49, 0, 108)),
+                                          fontSize: 24.0,
+                                          fontWeight: FontWeight.bold,
+                                          color:
+                                              Color.fromARGB(255, 49, 0, 108)),
+                                    ),
+                                  ),
+                                  Align(
+                                      alignment: Alignment.topLeft,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(16.0),
+                                        child: RichText(
+                                            text: const TextSpan(
+                                          text:
+                                              '- надійність\n- оригінальність\n- відповідальність\n- доброчесність\n',
+                                          style: TextStyle(
+                                              color: Color.fromARGB(
+                                                  255, 49, 0, 108)),
+                                        )),
+                                      )),
+                                  const Align(
+                                    alignment: Alignment.topLeft,
+                                    child: Padding(
+                                        padding: EdgeInsets.all(16.0),
+                                        child: Text(
+                                            'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+                                            style: TextStyle(
+                                                color: Color.fromARGB(
+                                                    255, 49, 0, 108)))),
+                                  ),
+                                ],
                               ),
-                            ),
-                            Align(
-                                alignment: Alignment.topLeft,
-                                child: Padding(
-                                  padding: const EdgeInsets.all(16.0),
-                                  child: RichText(
-                                      text: const TextSpan(
-                                    text:
-                                        '- надійність\n- оригінальність\n- відповідальність\n- доброчесність\n',
-                                    style: TextStyle(
-                                        color: Color.fromARGB(255, 49, 0, 108)),
-                                  )),
-                                )),
-                            const Align(
-                              alignment: Alignment.topLeft,
-                              child: Padding(
-                                  padding: EdgeInsets.all(16.0),
-                                  child: Text(
-                                      'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-                                      style: TextStyle(
-                                          color: Color.fromARGB(
-                                              255, 49, 0, 108)))),
-                            ),
+                            ))
                           ],
                         ))))));
   }
